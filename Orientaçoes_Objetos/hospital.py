@@ -10,13 +10,12 @@ class Paciente:
 
 
     @classmethod
-    def ageAnoNascimeto(cls, nascimento):
-        return date.today().year - nascimento
+    def ageAnoNascimeto(cls, name, nascimento, cpf, email):
+        age = (date.today().year - nascimento)
+        return Paciente(name, age, cpf, email)
 
 class Medico:
     pass
-
-
 
 
 paciente = Paciente("Beatriz", 23, "000.000.00-0", "beatriz@gmail.com")
