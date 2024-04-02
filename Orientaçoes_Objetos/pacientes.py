@@ -4,9 +4,11 @@ paradigma Estrturado - C - structs
 paradigma Procedural - Python
 
 """
+
 # Paradigma Imperativo
+
 """
-def Registra(name: str, surname: str, age: int, cpf:str, gmail: str):
+def Registra(name, surname, age, cpf, gmail):
     paciente = {
         "name": name, 
         "surname": surname, 
@@ -14,7 +16,8 @@ def Registra(name: str, surname: str, age: int, cpf:str, gmail: str):
         "cpf": cpf,
         "gmail": gmail
 }
-    return paciente"""
+    return paciente
+"""
 
 
 # Reuso e coesao
@@ -40,8 +43,7 @@ Atributo - São as variaveis de uma class
 
 
 class Paciente:
-
-
+    
     def __init__(self, name, surname, age, cpf, gmail):
         self.name = name
         self.surname = surname
